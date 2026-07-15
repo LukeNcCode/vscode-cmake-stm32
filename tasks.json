@@ -1,0 +1,37 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build", "${workspaceFolder}/build/Debug",
+                "--config", "Debug",
+                "--target", "all",
+                "--", "-j4"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "Flash",
+            "type": "shell",
+            "command": "C:/Program Files/SEGGER/JLink/JLink.exe",//更改为实际Jlink驱动目录
+            "args": [
+                "-device", "STM32F407ZG",
+                "-if", "SWD", 
+                "-speed", "4000",
+                "-autoconnect", "1",
+                "-CommanderScript", "flash.jlink"//改成绝对路径
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        }
+    ]
+}
