@@ -1,8 +1,0 @@
-loadfile ./build/Debug/asd.elf
-
-# 复位并运行程序
-r
-g
-
-# 退出
-exit
