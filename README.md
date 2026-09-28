@@ -7,7 +7,8 @@
 - VSCode 扩展：
   - [Cortex-Debug](https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug) — 用于 JLink 调试
   - [Tasks](https://marketplace.visualstudio.com/items?itemName=actboy168.tasks) — 在状态栏自动显示 `Build` / `Flash` 按钮
-
+  - 其他扩展详见加载STM32.code-profile
+  
 ## 🚀 快速开始
 
 1. 安装上述 VSCode 扩展。
