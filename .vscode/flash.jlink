@@ -1,4 +1,5 @@
-loadfile ./build/Debug/asd.elf
+#替换对应elf
+loadfile ./build/Debug/test.elf
 
 # 复位并运行程序
 r
